@@ -1,0 +1,1 @@
+-r mypertamina-sentiment/requirements.txt
