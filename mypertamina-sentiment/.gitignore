@@ -1,0 +1,63 @@
+# ============================================================
+# .gitignore — Sistem Analisis Sentimen MyPertamina
+# ============================================================
+
+# --- Virtual Environment ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Python cache ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+.Python
+
+# --- Build/dist ---
+build/
+dist/
+*.egg-info/
+*.egg
+
+# --- Jupyter Notebook checkpoints ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# --- Dataset (jangan commit data mentah/hasil ke repo) ---
+data/raw/*.csv
+data/processed/*.csv
+data/predictions/*.csv
+
+# --- Model output (file besar, jangan di-commit) ---
+model_output/
+*.bin
+*.pt
+*.pth
+*.safetensors
+
+# --- Log dan temp ---
+*.log
+*.tmp
+*.bak
+logs/
+tmp/
+
+# --- Environment variables / credentials ---
+.env
+.env.*
+secrets.yaml
+secrets.json
+
+# --- OS-generated ---
+desktop.ini
+.DS_Store
+Thumbs.db
+
+# --- IDE / Editor ---
+.vscode/settings.json
+.idea/
+*.suo
+*.user

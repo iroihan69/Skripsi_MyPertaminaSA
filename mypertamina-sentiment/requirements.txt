@@ -1,0 +1,34 @@
+# ============================================================
+# requirements.txt — Sistem Analisis Sentimen MyPertamina
+# Python target : 3.13.x
+# Terakhir diperbarui: 2026-03-16
+# ============================================================
+
+# --- Core NLP & Model ---
+transformers==4.57.1   # Dibekukan untuk baseline Fase 07 (kompatibel pipeline training saat ini)
+torch>=2.4.0             # Python 3.13 support mulai torch 2.4
+tokenizers>=0.19.0
+accelerate>=0.26.0       # Dibutuhkan Trainer agar setup device tidak gagal
+
+# --- Data & Komputasi ---
+numpy>=1.26.0            # numpy <1.26 belum mendukung Python 3.13
+pandas>=2.0.0
+scikit-learn>=1.4.0
+
+# --- Scraping ---
+google-play-scraper>=1.2.4
+
+# --- Preprocessing Teks Bahasa Indonesia ---
+PySastrawi>=1.0.0
+nltk>=3.8.0
+
+# --- Visualisasi & Dashboard ---
+streamlit>=1.35.0
+plotly>=5.20.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+wordcloud>=1.9.3
+
+# --- Utilitas ---
+tqdm>=4.66.0
+python-dotenv>=1.0.0
