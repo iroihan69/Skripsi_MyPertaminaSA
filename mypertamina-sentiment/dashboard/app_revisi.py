@@ -214,6 +214,87 @@ st.markdown(
         color: var(--text) !important;
     }
 
+    /* Fix warna dropdown filter Streamlit multiselect */
+    div[data-baseweb="select"] * {
+        color: #c64537 !important;
+    }
+
+    div[data-baseweb="select"] input,
+    div[data-baseweb="select"] input::placeholder,
+    div[data-baseweb="select"] span,
+    div[data-baseweb="select"] svg {
+        color: #c64537 !important;
+        fill: #c64537 !important;
+        opacity: 1 !important;
+    }
+
+    div[data-baseweb="tag"] {
+        background: #ffe9e5 !important;
+        border: 1px solid #f3b8af !important;
+        border-radius: 10px !important;
+    }
+
+    div[data-baseweb="tag"] span,
+    div[data-baseweb="tag"] svg {
+        color: #c64537 !important;
+        fill: #c64537 !important;
+    }
+
+    div[data-baseweb="popover"] {
+        z-index: 99999 !important;
+    }
+
+    div[data-baseweb="popover"] > div,
+    div[data-baseweb="popover"] ul,
+    div[data-baseweb="popover"] li {
+        background: #ffffff !important;
+    }
+
+    div[data-baseweb="popover"] > div {
+        border: 1px solid #e6c9c4 !important;
+        border-radius: 14px !important;
+        box-shadow: 0 14px 30px rgba(198, 69, 55, 0.12) !important;
+    }
+
+    ul[role="listbox"] {
+        background: #ffffff !important;
+        padding: 8px !important;
+    }
+
+    div[role="option"],
+    ul[role="listbox"] li {
+        background: #ffffff !important;
+        color: #c64537 !important;
+        border-radius: 10px !important;
+    }
+
+    div[role="option"] *,
+    ul[role="listbox"] li *,
+    div[role="option"] svg,
+    ul[role="listbox"] svg {
+        color: #c64537 !important;
+        fill: #c64537 !important;
+        opacity: 1 !important;
+    }
+
+    div[role="option"]:hover,
+    ul[role="listbox"] li:hover {
+        background: #fff3f1 !important;
+        color: #c64537 !important;
+    }
+
+    div[role="option"][aria-selected="true"] {
+        background: #ffe9e5 !important;
+        color: #c64537 !important;
+    }
+
+    div[data-baseweb="popover"] div[aria-selected="true"] *,
+    div[data-baseweb="popover"] div[role="option"] *,
+    div[data-baseweb="popover"] span,
+    div[data-baseweb="popover"] p {
+        color: #c64537 !important;
+    }
+
     [data-testid="stPlotlyChart"] {
         background: #ffffff;
         border: 1px solid var(--border);
