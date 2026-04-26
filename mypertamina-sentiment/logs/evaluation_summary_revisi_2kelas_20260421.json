@@ -1,0 +1,87 @@
+{
+  "checkedAt": "2026-04-21T18:59:20",
+  "modelDir": "D:\\File Opieq\\MypertaminaSA\\mypertamina-sentiment\\model_output\\baseline_indobert_revisi_2kelas",
+  "evalInput": "D:\\File Opieq\\MypertaminaSA\\mypertamina-sentiment\\data\\processed\\test_data_revisi_2kelas_20260421.csv",
+  "evalRows": 24529,
+  "decisionThreshold": 0.8,
+  "decision": "Terima baseline dan lanjut Fase 09",
+  "labelScheme": "2class",
+  "labelOrderNames": [
+    "Negatif",
+    "Positif"
+  ],
+  "predictedHeaders": [
+    "Prediksi Negatif",
+    "Prediksi Positif"
+  ],
+  "metrics": {
+    "accuracy": 0.9333849728892332,
+    "weighted_precision": 0.9312086365676281,
+    "weighted_recall": 0.9333849728892332,
+    "weighted_f1": 0.9317755004372028,
+    "macro_f1": 0.8702131791470389
+  },
+  "confusionMatrix": {
+    "Aktual Negatif": {
+      "Prediksi Negatif": 20004,
+      "Prediksi Positif": 599
+    },
+    "Aktual Positif": {
+      "Prediksi Negatif": 1035,
+      "Prediksi Positif": 2891
+    }
+  },
+  "classificationReport": {
+    "Negatif": {
+      "precision": 0.9508056466562099,
+      "recall": 0.9709265640926079,
+      "f1-score": 0.9607607703760627,
+      "support": 20603.0
+    },
+    "Positif": {
+      "precision": 0.8283667621776505,
+      "recall": 0.7363728986245542,
+      "f1-score": 0.7796655879180151,
+      "support": 3926.0
+    }
+  },
+  "topConfusions": [
+    {
+      "actualLabelId": 1,
+      "actualLabel": "Positif",
+      "predictedLabelId": 0,
+      "predictedLabel": "Negatif",
+      "count": 1035
+    },
+    {
+      "actualLabelId": 0,
+      "actualLabel": "Negatif",
+      "predictedLabelId": 1,
+      "predictedLabel": "Positif",
+      "count": 599
+    }
+  ],
+  "misclassifiedCount": 1634,
+  "misclassifiedOutput": "D:\\File Opieq\\MypertaminaSA\\mypertamina-sentiment\\logs\\evaluation_misclassified_samples_revisi_2kelas_20260421.csv",
+  "confusionMatrixPng": "D:\\File Opieq\\MypertaminaSA\\mypertamina-sentiment\\logs\\evaluation_confusion_matrix_revisi_2kelas_20260421.png",
+  "labelDistributionEval": {
+    "1": 3926,
+    "0": 20603
+  },
+  "predictedDistribution": {
+    "1": 3490,
+    "0": 21039
+  },
+  "config": {
+    "model_dir": "D:\\File Opieq\\MypertaminaSA\\mypertamina-sentiment\\model_output\\baseline_indobert_revisi_2kelas",
+    "eval_input": "D:\\File Opieq\\MypertaminaSA\\mypertamina-sentiment\\data\\processed\\test_data_revisi_2kelas_20260421.csv",
+    "report_output": "D:\\File Opieq\\MypertaminaSA\\mypertamina-sentiment\\logs\\evaluation_report_revisi_2kelas_20260421.md",
+    "summary_output": "D:\\File Opieq\\MypertaminaSA\\mypertamina-sentiment\\logs\\evaluation_summary_revisi_2kelas_20260421.json",
+    "confusion_matrix_png": "D:\\File Opieq\\MypertaminaSA\\mypertamina-sentiment\\logs\\evaluation_confusion_matrix_revisi_2kelas_20260421.png",
+    "misclassified_output": "D:\\File Opieq\\MypertaminaSA\\mypertamina-sentiment\\logs\\evaluation_misclassified_samples_revisi_2kelas_20260421.csv",
+    "top_error_pairs": 3,
+    "max_error_samples": 30,
+    "decision_weighted_f1_threshold": 0.8,
+    "label_scheme": "2class"
+  }
+}
