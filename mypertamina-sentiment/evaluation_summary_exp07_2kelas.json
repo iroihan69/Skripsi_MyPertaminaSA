@@ -1,0 +1,87 @@
+{
+  "checkedAt": "2026-06-20T20:34:23",
+  "modelDir": "/content/drive/MyDrive/2Kelas_exp07/model_output/indobert_exp07_2kelas",
+  "evalInput": "/content/drive/MyDrive/2Kelas_exp07/test_data_revisi_2kelas_20260421.csv",
+  "evalRows": 24529,
+  "decisionThreshold": 0.8,
+  "decision": "Terima baseline dan lanjut Fase 09",
+  "labelScheme": "2class",
+  "labelOrderNames": [
+    "Negatif",
+    "Positif"
+  ],
+  "predictedHeaders": [
+    "Prediksi Negatif",
+    "Prediksi Positif"
+  ],
+  "metrics": {
+    "accuracy": 0.9406416894288393,
+    "weighted_precision": 0.940753185210885,
+    "weighted_recall": 0.9406416894288393,
+    "weighted_f1": 0.9406966001981907,
+    "macro_f1": 0.8898217723941998
+  },
+  "confusionMatrix": {
+    "Aktual Negatif": {
+      "Prediksi Negatif": 19866,
+      "Prediksi Positif": 737
+    },
+    "Aktual Positif": {
+      "Prediksi Negatif": 719,
+      "Prediksi Positif": 3207
+    }
+  },
+  "classificationReport": {
+    "Negatif": {
+      "precision": 0.9650716541170755,
+      "recall": 0.9642285104111051,
+      "f1-score": 0.964649898028552,
+      "support": 20603.0
+    },
+    "Positif": {
+      "precision": 0.8131338742393509,
+      "recall": 0.8168619460010188,
+      "f1-score": 0.8149936467598475,
+      "support": 3926.0
+    }
+  },
+  "topConfusions": [
+    {
+      "actualLabelId": 0,
+      "actualLabel": "Negatif",
+      "predictedLabelId": 1,
+      "predictedLabel": "Positif",
+      "count": 737
+    },
+    {
+      "actualLabelId": 1,
+      "actualLabel": "Positif",
+      "predictedLabelId": 0,
+      "predictedLabel": "Negatif",
+      "count": 719
+    }
+  ],
+  "misclassifiedCount": 1456,
+  "misclassifiedOutput": "/content/drive/MyDrive/2Kelas_exp07/logs/misclassified_samples_exp07_2kelas.csv",
+  "confusionMatrixPng": "/content/drive/MyDrive/2Kelas_exp07/logs/confusion_matrix_exp07_2kelas.png",
+  "labelDistributionEval": {
+    "1": 3926,
+    "0": 20603
+  },
+  "predictedDistribution": {
+    "1": 3944,
+    "0": 20585
+  },
+  "config": {
+    "model_dir": "/content/drive/MyDrive/2Kelas_exp07/model_output/indobert_exp07_2kelas",
+    "eval_input": "/content/drive/MyDrive/2Kelas_exp07/test_data_revisi_2kelas_20260421.csv",
+    "report_output": "/content/drive/MyDrive/2Kelas_exp07/logs/evaluation_report_exp07_2kelas.md",
+    "summary_output": "/content/drive/MyDrive/2Kelas_exp07/logs/evaluation_summary_exp07_2kelas.json",
+    "confusion_matrix_png": "/content/drive/MyDrive/2Kelas_exp07/logs/confusion_matrix_exp07_2kelas.png",
+    "misclassified_output": "/content/drive/MyDrive/2Kelas_exp07/logs/misclassified_samples_exp07_2kelas.csv",
+    "top_error_pairs": 3,
+    "max_error_samples": 30,
+    "decision_weighted_f1_threshold": 0.8,
+    "label_scheme": "2class"
+  }
+}
