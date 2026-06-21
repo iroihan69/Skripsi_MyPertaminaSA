@@ -31,6 +31,7 @@ dist/
 data/raw/*.csv
 data/processed/*.csv
 data/predictions/*.csv
+!data/predictions/predictions_exp07_2kelas.csv
 
 # --- Model output (file besar, jangan di-commit) ---
 model_output/
@@ -43,7 +44,8 @@ model_output/
 *.log
 *.tmp
 *.bak
-logs/
+logs/*
+!logs/evaluation_summary_exp07_2kelas.json
 tmp/
 
 # --- Environment variables / credentials ---
