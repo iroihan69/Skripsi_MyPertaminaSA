@@ -21,8 +21,8 @@ SENTIMENT_COLORS = {
     "Negatif": "#C64537",
     "Positif": "#238B5A",
 }
-DEFAULT_PREDICTION_PATH = Path("data/predictions/predictions_revisi_2kelas_20260421.csv")
-DEFAULT_EVAL_SUMMARY_PATH = Path("logs/evaluation_summary_revisi_2kelas_20260421.json")
+DEFAULT_PREDICTION_PATH = Path("data/predictions/predictions_exp07_2kelas.csv")
+DEFAULT_EVAL_SUMMARY_PATH = Path("logs/evaluation_summary_exp07_2kelas.json")
 
 st.markdown(
     """
